@@ -1,0 +1,95 @@
+*{box-sizing:border-box}
+:root{ --blue-deep:#0f274f;--blue-bright:#0f3f7a;--blue-glow:#0fa3ff; --header-offset:140px; --fz: clamp(14px, 2.4vw, 16px) }
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#fff;background:radial-gradient(60% 60% at 50% 0%,var(--blue-deep) 0%,var(--blue-bright) 55%,#0a1c35 100%);font-size:var(--fz); line-height:1.6}
+a{text-decoration:none;color:#e6efff}
+.container{max-width:1100px;margin:0 auto;padding:0 24px}
+.section{padding:96px 0}
+.section,.hero{scroll-margin-top:var(--header-offset)}
+.center{text-align:center}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;padding:20px 18px;background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border-right:1px solid rgba(255,255,255,.15);overflow-y:auto}
+.brand{text-align:center;margin-bottom:18px}
+.logo-side{height:64px;display:block;margin:0 auto 8px;filter:drop-shadow(0 0 10px rgba(15,163,255,.25))}
+.tag{color:#c9d1e5;font-size:12px;margin:0}
+.menu{display:flex;flex-direction:column;gap:10px;margin:16px 0 18px}
+.menu a{padding:12px 14px;border-radius:12px;color:#f3f6ff;min-height:48px}
+.menu a:hover{background:rgba(255,255,255,.12)}
+.hours{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);border-radius:14px;padding:12px;font-size:13px;color:#dbe4ff}
+.hours h4{margin:0 0 8px 0;color:#fff}
+.content{margin-left:260px}
+.topbar{position:sticky;top:0;z-index:5;background:linear-gradient(90deg,rgba(15,63,122,.6),rgba(15,163,255,.25));border-bottom:1px solid rgba(255,255,255,.15)}
+.topbar .container{display:flex;align-items:center;justify-content:center;gap:16px;min-height:72px;position:relative}
+.right-logo{position:absolute;right:24px}
+.logo-main{height:76px;width:auto;filter:drop-shadow(0 8px 26px rgba(15,163,255,.35))}
+.logo-jeep{height:54px;width:auto;border-radius:50%;box-shadow:0 0 0 1px rgba(255,255,255,.25)}
+.nav-toggle{display:none; position:absolute; left:16px; top:18px; background:transparent; border:0; width:40px; height:40px}
+.nav-toggle span{display:block; height:2px; background:#fff; margin:8px 6px; border-radius:2px}
+.hero{text-align:center;padding:140px 0 120px;min-height:calc(100vh - var(--header-offset))}
+.hero h1{font-size:clamp(28px,6vw,42px);margin:0 0 12px 0;text-shadow:0 10px 30px rgba(15,163,255,.25)}
+.hero .lead{color:#d6e3ff;max-width:920px;margin:0 auto 10px;line-height:1.6;font-size:clamp(14px,2.4vw,18px)}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:linear-gradient(90deg,#0F3F7A,#0FA3FF);color:#fff;padding:14px 26px;border-radius:28px;display:inline-block;margin-top:14px;box-shadow:0 10px 30px rgba(15,163,255,.25);min-height:48px}
+.btn-secondary{background:transparent;border:1px solid #7bbaff;color:#e6efff;padding:14px 22px;border-radius:28px;display:inline-block;margin-top:14px;min-height:48px}
+.btn-outline{background:transparent;border:1px solid #7bbaff;color:#e6efff;padding:12px 18px;border-radius:28px;display:inline-block;min-height:44px}
+.services-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.service-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.service-card h3{margin:0 0 6px 0}
+.reviews-bar{display:flex;gap:12px;justify-content:center;color:#e6efff;margin:6px 0 0;}
+.reviews-bar a{color:#a7d1ff}
+.reviews-carousel{position:relative;overflow:hidden;margin-top:8px}
+.reviews-carousel .track{display:flex; gap:16px; overflow-x:auto; overflow-y:hidden; scroll-behavior:smooth; scroll-snap-type:x mandatory; padding:8px 4px; -webkit-overflow-scrolling:touch; scrollbar-width:none}
+.reviews-carousel .track::-webkit-scrollbar{ display:none }
+.reviews-carousel .review-card{min-width:82vw; max-width:420px; scroll-snap-align:center; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:16px; padding:14px}
+@media (min-width:900px){ .reviews-carousel .review-card{ min-width:320px } }
+.reviews-controls{display:flex;justify-content:center;gap:10px;margin-top:8px}
+.reviews-controls .dot{width:8px;height:8px;border-radius:50%;background:#ffffff33;border:none}
+.reviews-controls .dot.active{background:#0FA3FF}
+.reviews-nav{position:absolute; top:50%; transform:translateY(-50%); z-index:2; background:#ffffff1a; border:1px solid #ffffff33; width:38px; height:38px; border-radius:50%; color:#fff}
+.reviews-nav:disabled{ opacity:.4; cursor:not-allowed }
+.reviews-nav.prev{ left:8px } 
+.reviews-nav.next{ right:8px }
+.attrib{text-align:center;margin-top:6px;font-size:12px;color:#cfe0ff}
+.images{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.images img{width:100%;height:180px;object-fit:cover;border-radius:12px}
+@media (max-width:900px){ .images img{ height:160px } }
+.glass-card{ margin-top:16px; border-radius:20px; padding:22px; background:linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.06)); border:1px solid rgba(255,255,255,.22); box-shadow: 0 10px 40px rgba(0,0,0,.30), inset 0 0 0 1px rgba(255,255,255,.08); backdrop-filter: blur(10px) saturate(120%) }
+.alert{display:none;margin-bottom:10px;padding:10px 12px;border-radius:12px;font-weight:600}
+.alert.warn{display:block;background:#ffbf0040;border:1px solid #ffbf00;color:#fff}
+.alert.ok{display:block;background:#00c16740;border:1px solid #00c167;color:#fff}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:12px}
+.form-grid label{font-weight:700;color:#eef4ff}
+.form-grid input,.form-grid select,.form-grid textarea{border:1px solid rgba(255,255,255,.28); background:rgba(9,25,46,.45); color:#fff; border-radius:14px; padding:12px 12px; font:inherit; outline:none; transition:border .2s ease, box-shadow .2s ease, background .2s ease; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06)}
+.form-grid input::placeholder,.form-grid textarea::placeholder{color:#cfe0ffcc}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{ border-color:#0fa3ff; box-shadow:0 0 0 3px rgba(15,163,255,.25); background:rgba(9,25,46,.6) }
+.form-grid .full{grid-column:1/-1}
+.form-grid .consent{display:flex;align-items:center;gap:8px;font-weight:600}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.form-hint{color:#cfe0ff;margin-top:8px}
+.contact-grid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.info{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.map iframe{width:100%;height:260px;border:0;border-radius:16px}
+.footer{background:rgba(0,0,0,.35);color:#cfe0ff;padding:18px 0;text-align:center}
+.quick-actions{display:none}
+@media (max-width:900px){
+  body.no-scroll{overflow:hidden}
+  .nav-toggle{display:block}
+  .sidebar{position:fixed; inset:0 auto 0 0; width:min(82%, 320px); transform:translateX(-100%); transition:transform .25s ease; box-shadow: 8px 0 28px rgba(0,0,0,.4); z-index:60}
+  .sidebar.open{ transform:translateX(0) }
+  .sidebar.open::after{ content:""; position:fixed; inset:0; left:100%; background:rgba(0,0,0,.45); backdrop-filter:saturate(120%) blur(1px) }
+  .content{margin:0}
+  .logo-main{height:64px}
+  .logo-jeep{height:48px}
+  .contact-grid{grid-template-columns:1fr}
+  .hero{padding:120px 0 96px;min-height:auto}
+  .hero h1{font-size:34px}
+  .quick-actions{ position:fixed; left:0; right:0; bottom:0; z-index:55; display:flex; gap:10px; padding:10px; background:linear-gradient(180deg, transparent, rgba(0,0,0,.35)) }
+  .qa-btn{ flex:1; text-align:center; padding:12px 0; border-radius:999px; background:#0FA3FF; color:#fff; font-weight:600; box-shadow:0 8px 20px rgba(15,163,255,.35); min-height:48px }
+  .qa-btn:last-child{ background:#00C167 }
+  .section:last-of-type{ padding-bottom:140px }
+  .form-grid{grid-template-columns:1fr}
+}
+.float-whatsapp{position:fixed;right:22px;bottom:22px;z-index:50;width:58px;height:58px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#00B061,#00E676);box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.float-whatsapp svg{transform:scale(1.18)}
+a:focus, button:focus{ outline:2px solid #0FA3FF; outline-offset:3px }
+.btn-primary,.btn-secondary,.btn-outline,.qa-btn{touch-action:manipulation}
+@media (prefers-reduced-motion: reduce){ *{ animation:none !important; transition:none !important; scroll-behavior:auto !important } }

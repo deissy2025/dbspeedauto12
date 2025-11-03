@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f3f7a">
+  <link rel="apple-touch-icon" href="assets/logo.jpeg">
+  <title>DB Speed Auto - Geelong’s Jeep Specialist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar" aria-label="Site menu">
+    <div class="brand">
+      <br><br>
+      <p class="tag">Geelong’s Jeep Specialist</p>
+    </div>
+    <nav class="menu">
+      <a class="navlink" href="#home">Home</a>
+      <a class="navlink" href="#services">Services</a>
+      <a class="navlink" href="#about">About</a>
+      <a class="navlink" href="#reviews">Reviews</a>
+      <a class="navlink" href="#gallery">Gallery</a>
+      <a class="navlink" href="#quote">Request a Quote</a>
+      <a class="navlink" href="#contact">Contact</a>
+      <a href="https://www.facebook.com/search/top?q=db%20speed%20auto" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <div class="hours">
+      <h4>Workshop Hours</h4>
+      <p>Mon–Fri 8:30–5:30</p>
+      <p>Sat 9:00–1:00</p>
+      <p class="phone">☎ 0401 571 829</p>
+    </div>
+  </aside>
+
+  <main class="content">
+    <header class="topbar">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="container">
+        <div class="right-logo"><img src="assets/logo_jeep.jpeg" class="logo-jeep" alt="Jeep round logo" loading="lazy" width="512" height="512"></div>
+        <img src="assets/logo.jpeg" class="logo-main" alt="DB Speed Auto logo" loading="lazy" width="1024" height="512">
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Precision. Passion. Performance.</h1>
+        <p class="lead">At <strong>DB Speed Auto</strong>, we bring over <strong>20 years of hands-on experience</strong> in the automotive industry. Our team is <strong>dealer-trained by Jeep and FCA</strong>, combining advanced diagnostics with precision workmanship.</p>
+        <p class="lead">We provide complete <strong>brake machining</strong>, <strong>engine rebuilds</strong>, and <strong>performance upgrades</strong> — tailored to keep your vehicle running at its absolute best. Whether you drive for adventure, performance, or reliability, you’ll experience service built on <strong>trust</strong>, <strong>technical expertise</strong>, and a genuine <strong>passion for cars</strong>.</p>
+        <div class="hero-cta">
+          <a href="tel:0401571829" class="btn-primary">Book a Service</a>
+          <a href="#quote" class="btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="services-grid">
+          <div class="service-card"><h3>Logbook Servicing</h3><p>Scheduled maintenance using genuine or OEM-quality parts, keeping your warranty and resale value strong.</p></div>
+          <div class="service-card"><h3>Diagnostic & Electrical</h3><p>Dealer-grade scan tools for Jeep/FCA and other brands. Fault tracing, ECU checks, wiring repairs.</p></div>
+          <div class="service-card"><h3>Brake Machining</h3><p>On-car and off-car rotor machining, quality pads and fluid flush to restore stopping power.</p></div>
+          <div class="service-card"><h3>Engine Rebuilds</h3><p>Short & long block builds, timing components, gaskets, cylinder head work, run-in and verification.</p></div>
+          <div class="service-card"><h3>Performance Upgrades</h3><p>Intake & exhaust, ECU tuning, suspension & 4x4 upgrades, driveline enhancements and cooling.</p></div>
+          <div class="service-card"><h3>Pre‑Purchase Inspections</h3><p>Comprehensive inspection report, scan data and test drive insights before you buy.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="services-grid">
+          <div class="service-card"><h3>Our Story</h3><p><strong>DB Speed Auto</strong> is an independent workshop in Geelong focused on precision diagnostics, performance and long‑term reliability. We bring more than <strong>20 years</strong> of hands‑on experience working with Australian, American and European platforms.</p></div>
+          <div class="service-card"><h3>Jeep/FCA Specialist</h3><p>Dealer‑trained on Jeep & FCA systems. From Pentastar and Hemi V8 to diesel platforms, we use factory‑level tools and procedures to fix issues correctly the first time.</p></div>
+          <div class="service-card"><h3>Capability & Tools</h3><p>Dealer‑grade scan tools, oscilloscope testing, brake lathe machining, engine assembly tools and torque instrumentation. Clear approvals before work proceeds.</p></div>
+          <div class="service-card"><h3>Quality & Warranty</h3><p>OEM or premium aftermarket parts only. Workmanship warranty, service reports and road‑test verification. Transparent pricing and on‑time delivery.</p></div>
+          <div class="service-card"><h3>Safety First</h3><p>Brake and suspension checks with every service. We set priorities and help you plan repairs that fit your budget without compromising safety.</p></div>
+          <div class="service-card"><h3>Talk to Us</h3><p>Call <strong>0401 571 829</strong> or WhatsApp us to discuss symptoms, quotes or performance goals.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section">
+      <div class="container">
+        <h2>What our customers are saying</h2>
+        <div class="reviews-bar">
+          <span id="g-summary">Loading reviews…</span>
+          <a id="g-link" target="_blank" rel="noopener">See on Google →</a>
+        </div>
+        <div class="reviews-carousel">
+          <button class="reviews-nav prev" aria-label="Previous reviews">‹</button>
+          <div class="track" id="reviews-track"></div>
+          <button class="reviews-nav next" aria-label="Next reviews">›</button>
+        </div>
+        <div class="reviews-controls" id="reviews-dots" aria-label="Review pagination"></div>
+        <div class="attrib">Reviews via <a id="attrib" target="_blank" rel="noopener">Google</a></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="images">
+          <img src="assets/dbspeedauto_000.jpg" alt="Workshop Dodge Charger" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_001.jpg" alt="Workshop 1" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_002.jpg" alt="Workshop 2" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_003.jpg" alt="Workshop 3" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_004.jpg" alt="Workshop 4" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_005.jpg" alt="Workshop 5" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_007.jpg" alt="Workshop 6" loading="lazy" width="1200" height="900">
+          <img src="assets/dbspeedauto_008.jpg" alt="Workshop 7" loading="lazy" width="1200" height="900">
+        </div>
+      </div>
+    </section>
+
+    <section id="quote" class="section">
+      <div class="container">
+        <h2>Request a Quote</h2>
+        <p class="lead center">Tell us about your vehicle and what you need—our team will get back to you promptly.</p>
+
+        <form id="quoteForm" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="glass-card">
+          <input type="hidden" name="form-name" value="quote">
+          <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+
+          <div id="formAlert" class="alert" role="alert" aria-live="polite"></div>
+
+          <div class="form-grid">
+            <label for="f-name">Full Name*</label>
+            <input id="f-name" type="text" name="name" required placeholder="John Smith" autocomplete="name">
+
+            <label for="f-email">Email*</label>
+            <input id="f-email" type="email" name="email" required placeholder="john@email.com" autocomplete="email">
+
+            <label for="f-phone">Phone</label>
+            <input id="f-phone" type="tel" name="phone" placeholder="0401 234 567" inputmode="tel" pattern="^[0-9 +()-]{6,}$" title="Use digits, spaces or + (min 6 chars)">
+
+            <label for="f-vehicle">Vehicle (Make / Model / Year)*</label>
+            <input id="f-vehicle" type="text" name="vehicle" required placeholder="Jeep Grand Cherokee 2018" autocomplete="on">
+
+            <label for="f-service">Service*</label>
+            <select id="f-service" name="service" required>
+              <option value="">Select a service…</option>
+              <option>Logbook Servicing</option>
+              <option>Diagnostics & Electrical</option>
+              <option>Brake Machining</option>
+              <option>Engine Rebuilds</option>
+              <option>Performance Upgrades</option>
+              <option>Pre‑Purchase Inspection</option>
+              <option>Other</option>
+            </select>
+
+            <label for="f-message" class="full">Message</label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Describe symptoms or the work you’d like done…"></textarea>
+
+            <label class="consent full">
+              <input type="checkbox" name="consent" required> I agree to be contacted about my request.
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn-primary" type="submit">Send Request</button>
+            <a id="waLink" class="btn-outline" href="#" target="_blank" rel="noopener">Open WhatsApp</a>
+          </div>
+          <p class="form-hint">Prefer email? Write us at <a href="mailto:service@dbspeedauto.com">service@dbspeedauto.com</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="info">
+          <h2>Contact</h2>
+          <p><strong>Address:</strong> W4/119 Corio Quay Rd, North Geelong VIC 3214</p>
+          <p><strong>Phone:</strong> 0401 571 829</p>
+          <p><strong>Email:</strong> service@dbspeedauto.com</p>
+          <a class="btn-primary" href="https://wa.me/61401571829" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+        <div class="map">
+          <iframe title="map" loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.796904782273!2d144.359!3d-38.116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sW4%2F119%20Corio%20Quay%20Rd!5e0!3m2!1sen!2sau!4v1690000000001"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        © 2025 DB Speed Auto · Geelong’s Jeep Specialist · All rights reserved.
+      </div>
+    </footer>
+
+    <div class="quick-actions" role="region" aria-label="Quick actions">
+      <a href="tel:0401571829" class="qa-btn">Call</a>
+      <a href="https://wa.me/61401571829" class="qa-btn" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </main>
+
+  <a class="float-whatsapp" href="https://wa.me/61401571829" target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M19.11 17.59a3.88 3.88 0 0 1-1.75-.46c-.53-.28-1.68-1.12-1.93-2.18-.25-1.06.13-1.63.46-2.02.33-.39.35-.66.21-1.01-.14-.35-.8-1.95-.96-2.3-.25-.6-.52-.5-.76-.51h-.65c-.22 0-.57.08-.87.41-.3.33-1.15 1.13-1.15 2.76 0 1.63 1.18 3.21 1.35 3.43.17.22 2.33 3.57 5.64 4.72.79.28 1.41.45 1.89.57.79.2 1.51.17 2.08.1.64-.08 1.95-.8 2.23-1.58.28-.78.28-1.44.2-1.58-.08-.14-.3-.22-.64-.39-.34-.17-1.95-.96-2.25-1.07-.3-.11-.52-.17-.74.17-.22.33-.86 1.07-1.06 1.29-.2.22-.39.25-.72.08z"/>
+    </svg>
+  </a>
+
+  <script src="reviews.js"></script>
+
+  <script>
+    // Smooth anchor navigation + prevent section overlap
+    document.querySelectorAll('.navlink').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href');
+        if(!id.startsWith('#')) return;
+        e.preventDefault();
+        const el = document.querySelector(id);
+        if (!el) return;
+        const y = el.getBoundingClientRect().top + window.scrollY - 120;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
+
+    // Mobile menu
+    const toggle = document.querySelector('.nav-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    if (toggle && sidebar){
+      toggle.addEventListener('click', ()=>{
+        const open = sidebar.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.classList.toggle('no-scroll', open);
+      });
+      document.querySelectorAll('.sidebar .menu a').forEach(a=>{
+        a.addEventListener('click', ()=>{
+          sidebar.classList.remove('open');
+          document.body.classList.remove('no-scroll');
+          toggle.setAttribute('aria-expanded','false');
+        });
+      });
+    }
+
+    // Quote form helpers
+    function buildWALink(data){
+      const num = "61401571829";
+      const text = [
+        "Quote request from website:",
+        `Name: ${data.name}`,
+        `Email: ${data.email}`,
+        `Phone: ${data.phone || "-"}`,
+        `Vehicle: ${data.vehicle}`,
+        `Service: ${data.service}`,
+        `Message: ${data.message || "-"}`
+      ].join("\n");
+      return `https://wa.me/${num}?text=${encodeURIComponent(text)}`;
+    }
+
+    const form = document.getElementById('quoteForm');
+    const waBtn = document.getElementById('waLink');
+    const alertBox = document.getElementById('formAlert');
+
+    function readForm(){
+      const fd = new FormData(form);
+      return Object.fromEntries(fd.entries());
+    }
+    function showAlert(type, msg){
+      alertBox.className = 'alert ' + type;
+      alertBox.textContent = msg;
+      alertBox.style.display = 'block';
+    }
+    function clearAlert(){ alertBox.style.display = 'none'; }
+
+    function validate(){
+      clearAlert();
+      const data = readForm();
+      if(!data.name || !data.email || !data.vehicle || !data.service){
+        showAlert('warn', 'Please fill in all required fields (Name, Email, Vehicle, Service).');
+        return false;
+      }
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if(!re.test(data.email)){
+        showAlert('warn', 'Please enter a valid email address.');
+        return false;
+      }
+      return true;
+    }
+
+    if(waBtn){
+      waBtn.addEventListener('click', (e)=>{
+        e.preventDefault();
+        if(!validate()) return;
+        const data = readForm();
+        window.open(buildWALink(data), "_blank");
+      });
+    }
+
+    if(form){
+      form.addEventListener('submit', (evt)=>{
+        if(!validate()){
+          evt.preventDefault();
+          return;
+        }
+        const data = readForm();
+        const link = buildWALink(data);
+        window.open(link, "_blank");
+        showAlert('ok', '✅ Thank you! We\'ve received your request. We\'ll contact you soon.');
+      });
+    }
+  </script>
+</body>
+</html>
